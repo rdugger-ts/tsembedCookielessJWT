@@ -1,0 +1,45 @@
+<template>
+    <div class="container" data-id="myContainer">
+         <!-- Element to render ThoughtSpot Liveboard -->
+        <!-- <div class="thoughtspot-insights" data-id="thoughtspotInsights" id="thoughtspotInsights" lwc:dom="manual"></div> -->
+        <!-- <button id="tryBtn" data-id="tryBtn">Download Liveboard</button> -->
+        <!-- <div>
+            <button data-id="thoughtspotInsightsJWT2" id="thoughtspotInsightsJWT2" onclick={handleClick}>Click me</button>
+        </div> -->
+        
+        <template if:true={showChildButtons}>
+            
+            <!-- <lightning-combobox
+                name="Region"
+                label=""
+                value={value}
+                placeholder="Select field label"
+                options={fieldsInfo}
+                onchange={handleChange} 
+                class="slds-m-left_x-small" >
+            </lightning-combobox>
+            <lightning-combobox
+                name="Region"
+                label=""
+                value={value}
+                placeholder="Select field label"
+                options={fieldsInfo}
+                onchange={handleChange} 
+                class="slds-m-left_x-small" >
+            </lightning-combobox> -->
+            
+            <c-ts-viz-embed-child-buttons
+                onpdf       = {handlePDFexport}
+                onpng       = {handlePNGexport}
+                onrefresh   = {handleRefresh}
+                onlbedit    = {handleLBEdit}
+                ongetfilters   = {handleGetFilters}
+                    >
+            </c-ts-viz-embed-child-buttons>
+            
+        </template>
+        
+        <div class="thoughtspot-insightsJWT" data-id="thoughtspotInsightsJWT" id="thoughtspotInsightsJWT" lwc:dom="manual"></div>
+        
+    </div>
+</template>

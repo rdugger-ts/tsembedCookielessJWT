@@ -1,0 +1,37 @@
+<template>
+    <!-- notice the "buttons" class assingment; this is in the css -->
+        <div class="slds-m-top_small slds-m-bottom_medium buttons">
+    
+    <!-- BUTTON STYLE AND EVENT INFO HERE: -->
+    <!-- https://developer.salesforce.com/docs/component-library/bundle/lightning-button/example -->
+    <!-- note: these are "built-in" salesforce buttons; notice the class assignments -->
+    
+    <!-- CUSTOM BUTTONS: -->
+    <!-- https://developer.salesforce.com/docs/component-library/bundle/lightning:icon/documentation 
+         https://www.lightningdesignsystem.com/icons/ -->
+    
+            <lightning-button-group>
+                <br>
+                <lightning-button label="Refresh" class="slds-m-left_x-small" onclick={handleClickForRefresh}></lightning-button>
+                <lightning-button-icon icon-name="doctype:pdf" variant="border-filled" label="Export PDF" title="Export PDF" onclick={handleClickForPDFexport} class="slds-m-left_x-small"></lightning-button-icon>
+                <lightning-button-icon icon-name="doctype:image" variant="border-filled" label="Export PNG" title="Export PNG" onclick={handleClickForPNGexport} class="slds-m-left_x-small"></lightning-button-icon>
+                <lightning-button label="Edit" class="slds-m-left_x-small" onclick={handleClickForEdit}></lightning-button>
+                <lightning-button label="GetFilters" class="slds-m-left_x-small" onclick={handleClickForGetFilters}></lightning-button>
+                <!-- <lightning-combobox
+                    name="Region"
+                    label=""
+                    value={value}
+                    placeholder="Select field label"
+                    options={tsLiveboardEmbedFieldsInfo}
+                    onclick={handleClickForGetFilters} 
+                    class="slds-m-left_x-small" >
+            </lightning-combobox> -->
+            </lightning-button-group>
+            <!-- Neutral variant (default) -->
+             <!-- <lightning-button-icon icon-name="doctype:pdf" variant="border-filled" label="Export PDF" title="Export PDF" onclick={handleClickForPDFexport} class="slds-m-left_x-small"></lightning-button-icon> -->
+             <!-- <lightning-button-icon icon-name="doctype:png" variant="border-filled" label="Export PNG" title="Export PNG" onclick={handleClickForPNGexport} class="slds-m-left_x-small"></lightning-button-icon> -->
+             <!-- <lightning-badge label="PNG" icon-name="custom:custom11" onclick={handleClickForPNGexport}></lightning-badge> -->
+
+        </div>
+    
+    </template>

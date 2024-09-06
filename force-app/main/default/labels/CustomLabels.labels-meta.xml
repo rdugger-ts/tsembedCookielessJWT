@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>TsObjectGUID</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TsObjectGUID</shortDescription>
+        <value>7ffababd-a9ce-4acf-9b60-331f2ef7bf90</value>
+    </labels>
+    <labels>
+        <fullName>TsOrgID</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TsOrgID</shortDescription>
+        <value>yourTSOrgID</value>
+    </labels>
+    <labels>
+        <fullName>TsValidityTime</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TsValidityTime</shortDescription>
+        <value>1000</value>
+    </labels>
+</CustomLabels>
